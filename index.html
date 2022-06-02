@@ -4,12 +4,133 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+
     <title>CV</title>
   </head>
   <body>
     <div class="wrapper">
-      <header class="header"></header>
-      <main class="main"></main>
+      <main class="main">
+        <div class="main__container">
+          <aside class="main__aside">
+            <div class="aside__photo photo">
+              <img class="photo__image" src="photo.jpg" alt="My Photo" />
+            </div>
+          </aside>
+          <div class="main__content">
+            <header class="header">
+              <nav class="header__nav nav">
+                <ul class="nav__list">
+                  <li class="nav__item"><a href="">About</a></li>
+                  <li class="nav__item"><a href="">Skills</a></li>
+                  <li class="nav__item"><a href="">Code</a></li>
+                  <li class="nav__item"><a href="">Experience</a></li>
+                  <li class="nav__item"><a href="">Education</a></li>
+                  <li class="nav__item"><a href="">Language</a></li>
+                  <li class="nav__item"><a href="">Contacts</a></li>
+                </ul>
+              </nav>
+            </header>
+            <section class="about">
+              <h2 class="about__title title">About me</h2>
+              <p class="about__text text">
+                I am an engineer who loves engineering, technology and
+                programming. And LEGO
+              </p>
+              <p class="about__text text">
+                For the last 8 years I have been working as an engineer of
+                automated control systems, namely "Smart Home" systems. It was a
+                very interesting experience, but over time I realized that the
+                results of my work are available only to those for whom this
+                work is being done - a client who wants a "Smart Home".
+              </p>
+              <p class="about__text text">
+                This prompted me to change my activity to frontend development -
+                a direction whose results are potentially available to the whole
+                world.
+              </p>
+            </section>
+            <section class="education">
+              <h2 class="education__title title">Education</h2>
+              <h3 class="education__subtitle subtitle">University Education</h3>
+              <p class="education__text text">
+                Saken Seifullin Kazakh Agrotechnical University
+              </p>
+              <p class="education__text text">
+                Faculty - Computer Systems and Vocational Education
+              </p>
+              <p class="education__text text">
+                Speciality - Information Systems
+              </p>
+              <p class="education__meta meta">2010 - Nur-Sultan</p>
+              <h3 class="education__subtitle subtitle">Courses</h3>
+              <p class="education__text text">
+                RSSchool - JS/FE Pre-School 2022Q2
+              </p>
+              <p class="education__meta meta">2022 - Nur-Sultan</p>
+            </section>
+            <section class="experience">
+              <h2 class="education__title title">Experience</h2>
+              <p class="experience__text text">
+                My experience in front-end development is small - personal
+                projects dedicated to board games that I do in my free time:
+              </p>
+              <ul class="experience__list list">
+                <li class="list__item">
+                  <a
+                    class="experience__link link"
+                    href="https://webtivity.vshka.ru"
+                    >Webtivity</a
+                  >
+                  - online adaptation of the board game.
+                  <a
+                    class="experience__link link"
+                    href="https://github.com/shkarubskiy/webtivity"
+                    >GitHub link</a
+                  >
+                </li>
+                <li class="list__item">
+                  <a class="experience__link link" href="https://teams.vshka.ru"
+                    >Teams</a
+                  >
+                  - team split tool.
+                  <a
+                    class="experience__link link"
+                    href="https://github.com/shkarubskiy/TeamMaker"
+                    >GitHub link</a
+                  >
+                </li>
+              </ul>
+            </section>
+            <section class="code">
+              <h2 class="code__title title">Code example</h2>
+              <p class="code__text text">
+                Codewars kata: Complete the solution so that the function will
+                break up camel casing, using a space between words.
+              </p>
+              <pre>
+                <code class="code__examle">
+                    function solution(string) {
+                        let result = "";
+                        for (letter of string) {
+                        letter != letter.toUpperCase()
+                            ? (result += letter)
+                            : (result = result + " " + letter);
+                        }
+                        return result;
+                    }
+                </code>
+              </pre>
+            </section>
+          </div>
+        </div>
+      </main>
       <footer class="footer"></footer>
     </div>
   </body>
