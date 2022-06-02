@@ -11,7 +11,14 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="style.css" />
-
+    <link
+      rel="stylesheet"
+      href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.9/styles/default.min.css"
+    />
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.9/highlight.min.js"></script>
+    <script>
+      hljs.initHighlightingOnLoad();
+    </script>
     <title>CV</title>
   </head>
   <body>
@@ -58,22 +65,28 @@
             </section>
             <section class="education">
               <h2 class="education__title title">Education</h2>
-              <h3 class="education__subtitle subtitle">University Education</h3>
-              <p class="education__text text">
-                Saken Seifullin Kazakh Agrotechnical University
-              </p>
-              <p class="education__text text">
-                Faculty - Computer Systems and Vocational Education
-              </p>
-              <p class="education__text text">
-                Speciality - Information Systems
-              </p>
-              <p class="education__meta meta">2010 - Nur-Sultan</p>
-              <h3 class="education__subtitle subtitle">Courses</h3>
-              <p class="education__text text">
-                RSSchool - JS/FE Pre-School 2022Q2
-              </p>
-              <p class="education__meta meta">2022 - Nur-Sultan</p>
+              <div class="education__card card">
+                <h3 class="education__subtitle subtitle">
+                  University Education
+                </h3>
+                <p class="education__text text">
+                  Saken Seifullin Kazakh Agrotechnical University
+                </p>
+                <p class="education__text text">
+                  Faculty - Computer Systems and Vocational Education
+                </p>
+                <p class="education__text text">
+                  Speciality - Information Systems
+                </p>
+                <p class="education__meta meta">2010 - Nur-Sultan</p>
+              </div>
+              <div class="education__card card">
+                <h3 class="education__subtitle subtitle">Courses</h3>
+                <p class="education__text text">
+                  RSSchool - JS/FE Pre-School 2022Q2
+                </p>
+                <p class="education__meta meta">2022 - Nur-Sultan</p>
+              </div>
             </section>
             <section class="experience">
               <h2 class="education__title title">Experience</h2>
@@ -114,19 +127,19 @@
                 Codewars kata: Complete the solution so that the function will
                 break up camel casing, using a space between words.
               </p>
-              <pre>
-                <code class="code__examle">
-                    function solution(string) {
-                        let result = "";
-                        for (letter of string) {
-                        letter != letter.toUpperCase()
-                            ? (result += letter)
-                            : (result = result + " " + letter);
-                        }
-                        return result;
-                    }
-                </code>
-              </pre>
+              <div class="code__block">
+                <pre><code>
+    function solution(string) {
+        let result = "";
+        for (letter of string) {
+            letter != letter.toUpperCase() 
+            ? (result += letter) 
+            : (result = result + " " + letter);
+        }
+        return result;
+    }
+                </code></pre>
+              </div>
             </section>
           </div>
         </div>

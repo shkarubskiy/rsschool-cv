@@ -1,4 +1,4 @@
-/* ОБНУЛЕНИЕ */
+/* ZEROING */
 
 *,
 *::before,
@@ -37,8 +37,9 @@ h6 {
 html,
 body {
   height: 100%;
-  line-height: 1;
+  line-height: calc(14 * 100vw / 555);
   font-family: "Montserrat", sans-serif;
+  font-size: calc(10 * 100vw / 555);
   color: #424242;
 }
 
@@ -49,32 +50,47 @@ body {
   min-height: 100%;
 }
 
-/* ELEMENTS ============================================== */
+/* ELEMENTS ======================================== */
 
 .title {
-  font-size: calc(10 * 100vw / 555);
   font-weight: 700;
+  display: flex;
+  align-items: center;
+}
+
+.title::after {
+  content: "";
+  width: calc(2 * 100vw / 555);
+  height: calc(2 * 100vw / 555);
+  margin-left: calc(10 * 100vw / 555);
+  border-radius: calc(1 * 100vw / 555);
+  background-color: #424242;
+}
+
+.title::before {
+  content: "";
+  width: calc(2 * 100vw / 555);
+  height: calc(2 * 100vw / 555);
+  margin-right: calc(10 * 100vw / 555);
+  border-radius: calc(1 * 100vw / 555);
+  background-color: #424242;
 }
 
 .subtitle {
-  font-size: calc(10 * 100vw / 555);
   font-weight: 700;
   color: #7e7e7e;
 }
 
 .text {
-  font-size: calc(10 * 100vw / 555);
   font-weight: 400;
 }
 
 .meta {
-  font-size: calc(10 * 100vw / 555);
   font-weight: 400;
   color: #7e7e7e;
 }
 
 .list__item {
-  font-size: calc(10 * 100vw / 555);
   font-weight: 400;
 }
 
@@ -84,7 +100,6 @@ body {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  font-size: calc(10 * 100vw / 555);
   font-weight: 700;
   border-bottom: solid calc(1 * 100vw / 555) rgba(66, 66, 66, 0.2);
   padding-bottom: calc(16 * 100vw / 555);
@@ -95,12 +110,11 @@ body {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  font-size: calc(10 * 100vw / 555);
   font-weight: 700;
 }
 
 .nav__item {
-  padding: calc(4 * 100vw / 555) calc(16 * 100vw / 555);
+  padding: calc(2 * 100vw / 555) calc(16 * 100vw / 555);
 }
 
 /* MAIN =============================================== */
@@ -123,6 +137,7 @@ body {
   background-color: #d8ecff;
   position: relative;
 }
+
 .main__content {
   width: 58%;
 }
@@ -140,7 +155,7 @@ body {
 }
 
 .about__text {
-  padding-bottom: calc(16 * 100vw / 555);
+  padding-bottom: calc(4 * 100vw / 555);
 }
 .about .about__text:last-child {
   padding-bottom: calc(0 * 100vw / 555);
@@ -150,18 +165,30 @@ body {
 
 .education {
   border-bottom: solid calc(1 * 100vw / 555) rgba(66, 66, 66, 0.2);
+  padding-bottom: calc(16 * 100vw / 555);
+  margin-bottom: calc(24 * 100vw / 555);
 }
+
+.education__card {
+  padding-bottom: calc(16 * 100vw / 555);
+}
+
 .education__title {
   padding-bottom: calc(16 * 100vw / 555);
 }
 
 .education__subtitle {
-  padding-bottom: calc(16 * 100vw / 555);
+  padding-bottom: calc(8 * 100vw / 555);
 }
 
 .education__text {
   color: #424242;
+  padding-bottom: calc(4 * 100vw / 555);
 }
+
+/* .education .education__meta:last-child {
+  padding-bottom: calc(16 * 100vw / 555);
+} */
 
 /* EXPERIENCE ======================================= */
 
@@ -171,6 +198,12 @@ body {
 
 .list__item {
   list-style: inside;
+}
+
+/* CODE =========================================== */
+
+.code__block {
+  font-size: calc(8 * 100vw / 555);
 }
 
 /* PHOTO ============================================ */
