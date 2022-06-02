@@ -11,6 +11,7 @@
 
 a {
   text-decoration: none;
+  color: inherit;
 }
 
 ul,
@@ -37,6 +38,8 @@ html,
 body {
   height: 100%;
   line-height: 1;
+  font-family: "Montserrat", sans-serif;
+  color: #424242;
 }
 
 .wrapper {
@@ -46,11 +49,143 @@ body {
   min-height: 100%;
 }
 
+/* ELEMENTS ============================================== */
+
+.title {
+  font-size: calc(10 * 100vw / 555);
+  font-weight: 700;
+}
+
+.subtitle {
+  font-size: calc(10 * 100vw / 555);
+  font-weight: 700;
+  color: #7e7e7e;
+}
+
+.text {
+  font-size: calc(10 * 100vw / 555);
+  font-weight: 400;
+}
+
+.meta {
+  font-size: calc(10 * 100vw / 555);
+  font-weight: 400;
+  color: #7e7e7e;
+}
+
+.list__item {
+  font-size: calc(10 * 100vw / 555);
+  font-weight: 400;
+}
+
+/* HEADER ================================================ */
+
+.header {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  font-size: calc(10 * 100vw / 555);
+  font-weight: 700;
+  border-bottom: solid calc(1 * 100vw / 555) rgba(66, 66, 66, 0.2);
+  padding-bottom: calc(16 * 100vw / 555);
+  margin-bottom: calc(24 * 100vw / 555);
+}
+
+.nav__list {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  font-size: calc(10 * 100vw / 555);
+  font-weight: 700;
+}
+
+.nav__item {
+  padding: calc(4 * 100vw / 555) calc(16 * 100vw / 555);
+}
+
+/* MAIN =============================================== */
+
 .main {
   flex: 1 1 auto;
 }
 
-.header__container {
+.main__container {
   margin: 0 auto;
-  padding: 0 15px;
+  padding: calc(20 * 100vw / 555) calc(20 * 100vw / 555) 0;
+  max-width: 1440px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.main__aside {
+  width: 38%;
+  margin-top: calc(42 * 100vw / 555);
+  background-color: #d8ecff;
+  position: relative;
+}
+.main__content {
+  width: 58%;
+}
+
+/* ABOUT ============================================= */
+
+.about {
+  border-bottom: solid calc(1 * 100vw / 555) rgba(66, 66, 66, 0.2);
+  padding-bottom: calc(16 * 100vw / 555);
+  margin-bottom: calc(24 * 100vw / 555);
+}
+
+.about__title {
+  padding-bottom: calc(16 * 100vw / 555);
+}
+
+.about__text {
+  padding-bottom: calc(16 * 100vw / 555);
+}
+.about .about__text:last-child {
+  padding-bottom: calc(0 * 100vw / 555);
+}
+
+/* EDUCATION ======================================== */
+
+.education {
+  border-bottom: solid calc(1 * 100vw / 555) rgba(66, 66, 66, 0.2);
+}
+.education__title {
+  padding-bottom: calc(16 * 100vw / 555);
+}
+
+.education__subtitle {
+  padding-bottom: calc(16 * 100vw / 555);
+}
+
+.education__text {
+  color: #424242;
+}
+
+/* EXPERIENCE ======================================= */
+
+.experience {
+  border-bottom: solid calc(1 * 100vw / 555) rgba(66, 66, 66, 0.2);
+}
+
+.list__item {
+  list-style: inside;
+}
+
+/* PHOTO ============================================ */
+
+.aside__photo {
+  overflow: hidden;
+  width: calc(94 * 100vw / 555);
+  height: calc(94 * 100vw / 555);
+  border: solid calc(3 * 100vw / 555) #ffffff;
+  border-radius: calc(47 * 100vw / 555);
+  position: absolute;
+  z-index: 10;
+  left: calc(50% - 47 * 100vw / 555);
+  top: calc(-47 * 100vw / 555);
+}
+.photo__image {
+  width: 100%;
 }
