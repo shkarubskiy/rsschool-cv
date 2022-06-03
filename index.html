@@ -23,6 +23,21 @@
   </head>
   <body>
     <div class="wrapper">
+      <div class="header__container">
+        <header class="header">
+          <nav class="header__nav nav">
+            <ul class="nav__list">
+              <li class="nav__item"><a href="#about">About</a></li>
+              <li class="nav__item"><a href="#skills">Skills</a></li>
+              <li class="nav__item"><a href="#code">Code</a></li>
+              <li class="nav__item"><a href="#experience">Experience</a></li>
+              <li class="nav__item"><a href="#education">Education</a></li>
+              <li class="nav__item"><a href="#language">Language</a></li>
+              <li class="nav__item"><a href="#contacts">Contacts</a></li>
+            </ul>
+          </nav>
+        </header>
+      </div>
       <main class="main">
         <div class="main__container">
           <aside class="main__aside">
@@ -31,20 +46,8 @@
             </div>
           </aside>
           <div class="main__content">
-            <header class="header">
-              <nav class="header__nav nav">
-                <ul class="nav__list">
-                  <li class="nav__item"><a href="">About</a></li>
-                  <li class="nav__item"><a href="">Skills</a></li>
-                  <li class="nav__item"><a href="">Code</a></li>
-                  <li class="nav__item"><a href="">Experience</a></li>
-                  <li class="nav__item"><a href="">Education</a></li>
-                  <li class="nav__item"><a href="">Language</a></li>
-                  <li class="nav__item"><a href="">Contacts</a></li>
-                </ul>
-              </nav>
-            </header>
             <section class="about">
+              <a name="about"></a>
               <h2 class="about__title title">About me</h2>
               <p class="about__text text">
                 I am an engineer who loves engineering, technology and
@@ -64,6 +67,7 @@
               </p>
             </section>
             <section class="education">
+              <a name="education"></a>
               <h2 class="education__title title">Education</h2>
               <div class="education__card card">
                 <h3 class="education__subtitle subtitle">
@@ -89,10 +93,20 @@
               </div>
             </section>
             <section class="experience">
-              <h2 class="education__title title">Experience</h2>
+              <a name="experience"></a>
+              <h2 class="experience__title title">Experience</h2>
               <p class="experience__text text">
-                My experience in front-end development is small - personal
-                projects dedicated to board games that I do in my free time:
+                I got my initial experience in front-end development while
+                studying at university.
+              </p>
+              <p class="experience__text text">
+                Later, when working with Smart Home systems, I used HTML and
+                JavaScript to create additional working tools, such as equipment
+                calculators.
+              </p>
+              <p class="experience__text text">
+                In my free time, I do my own small projects related to online
+                components for board games.
               </p>
               <ul class="experience__list list">
                 <li class="list__item">
@@ -101,11 +115,11 @@
                     href="https://webtivity.vshka.ru"
                     >Webtivity</a
                   >
-                  - online adaptation of the board game.
+                  - online game of charades.
                   <a
                     class="experience__link link"
                     href="https://github.com/shkarubskiy/webtivity"
-                    >GitHub link</a
+                    >GitHub</a
                   >
                 </li>
                 <li class="list__item">
@@ -116,12 +130,22 @@
                   <a
                     class="experience__link link"
                     href="https://github.com/shkarubskiy/TeamMaker"
-                    >GitHub link</a
+                    >GitHub</a
                   >
+                </li>
+                <li class="list__item">
+                  <a
+                    class="experience__link link"
+                    href="https://vshka.ru/portfolio.html"
+                  >
+                    HTML-CSS portfolio</a
+                  >
+                  - examples of layout work.
                 </li>
               </ul>
             </section>
             <section class="code">
+              <a name="code"></a>
               <h2 class="code__title title">Code example</h2>
               <p class="code__text text">
                 Codewars kata: Complete the solution so that the function will

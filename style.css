@@ -96,14 +96,10 @@ body {
 
 /* HEADER ================================================ */
 
-.header {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  font-weight: 700;
+.header__container {
   border-bottom: solid calc(1 * 100vw / 555) rgba(66, 66, 66, 0.2);
-  padding-bottom: calc(16 * 100vw / 555);
-  margin-bottom: calc(24 * 100vw / 555);
+  padding: calc(16 * 100vw / 555) 0;
+  margin: 0 calc(20 * 100vw / 555);
 }
 
 .nav__list {
@@ -114,7 +110,13 @@ body {
 }
 
 .nav__item {
-  padding: calc(2 * 100vw / 555) calc(16 * 100vw / 555);
+  padding: calc(2 * 100vw / 555) calc(10 * 100vw / 555);
+  color: #7e7e7e;
+  transition: color 250ms linear;
+}
+
+.nav__item:hover {
+  color: #424242;
 }
 
 /* MAIN =============================================== */
@@ -155,8 +157,9 @@ body {
 }
 
 .about__text {
-  padding-bottom: calc(4 * 100vw / 555);
+  padding-bottom: calc(8 * 100vw / 555);
 }
+
 .about .about__text:last-child {
   padding-bottom: calc(0 * 100vw / 555);
 }
@@ -171,6 +174,9 @@ body {
 
 .education__card {
   padding-bottom: calc(16 * 100vw / 555);
+}
+.education .education__card:last-child {
+  padding-bottom: 0;
 }
 
 .education__title {
@@ -194,16 +200,52 @@ body {
 
 .experience {
   border-bottom: solid calc(1 * 100vw / 555) rgba(66, 66, 66, 0.2);
+  padding-bottom: calc(16 * 100vw / 555);
+  margin-bottom: calc(24 * 100vw / 555);
+}
+
+.experience__title {
+  padding-bottom: calc(16 * 100vw / 555);
+}
+
+.experience__text {
+  padding-bottom: calc(4 * 100vw / 555);
 }
 
 .list__item {
   list-style: inside;
+  list-style-position: outside;
+  margin-left: calc(20 * 100vw / 555);
+  padding-bottom: calc(4 * 100vw / 555);
+}
+.experience__link {
+  color: #0074fd;
+  text-decoration: underline;
+}
+
+.experience__list .list__item:last-child {
+  padding-bottom: 0;
 }
 
 /* CODE =========================================== */
 
+.code {
+  border-bottom: solid calc(1 * 100vw / 555) rgba(66, 66, 66, 0.2);
+  padding-bottom: calc(16 * 100vw / 555);
+  margin-bottom: calc(24 * 100vw / 555);
+}
+
+.code__title {
+  padding-bottom: calc(16 * 100vw / 555);
+}
+
+.code__text {
+  padding-bottom: calc(16 * 100vw / 555);
+}
+
 .code__block {
-  font-size: calc(8 * 100vw / 555);
+  font-size: calc(10 * 100vw / 555);
+  padding-bottom: calc(16 * 100vw / 555);
 }
 
 /* PHOTO ============================================ */
