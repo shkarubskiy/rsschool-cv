@@ -1,9 +1,10 @@
 # Vyacheslav Shkarubskiy
+
 ### Junior Frontend Developer
 
 ---
 
-Contacts: 
+Contacts:
 **Phone:** +7701-622-6373<br>
 **E-mail:** mail@vshka.ru<br>
 **Telegram:** @vshkarubskiy<br>
@@ -21,11 +22,11 @@ This prompted me to change my activity to frontend development - a direction who
 
 ---
 
-### My skills
+### Skills
 
 - JavaScript Basics
 - HTML5, CSS3
-- Git 
+- Git
 - Node.js
 - Atom IDE
 - Linux
@@ -34,13 +35,16 @@ This prompted me to change my activity to frontend development - a direction who
 ---
 
 ### Code example from CODEWARS
+
 Complete the solution so that the function will break up camel casing, using a space between words.
 
 ```javascript
 function solution(string) {
   let result = "";
   for (letter of string) {
-    letter != letter.toUpperCase() ? result += letter : result = result + " " + letter;
+    letter != letter.toUpperCase()
+      ? (result += letter)
+      : (result = result + " " + letter);
   }
   return result;
 }
@@ -67,7 +71,6 @@ Information Systems<br>
 ### Language
 
 - Russian - Native
-- English - A1 (main practice - technical documentation and video games) 
+- English - A1 (main practice - technical documentation and video games)
 
 This CV was translated using Google Translate. God Bless Google Translate!
-

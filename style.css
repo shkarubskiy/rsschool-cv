@@ -76,6 +76,17 @@ body {
   background-color: #424242;
 }
 
+.title-aside {
+  font-weight: 700;
+  color: #ffffff;
+  background-color: #424242;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: calc(24 * 100vw / 555);
+}
+
 .subtitle {
   font-weight: 700;
   color: #7e7e7e;
@@ -212,7 +223,7 @@ body {
   padding-bottom: calc(4 * 100vw / 555);
 }
 
-.list__item {
+.experience__list .list__item {
   list-style: inside;
   list-style-position: outside;
   margin-left: calc(20 * 100vw / 555);
@@ -248,7 +259,7 @@ body {
   padding-bottom: calc(16 * 100vw / 555);
 }
 
-/* PHOTO ============================================ */
+/* ASIDE ============================================ */
 
 .aside__photo {
   overflow: hidden;
@@ -263,4 +274,65 @@ body {
 }
 .photo__image {
   width: 100%;
+}
+
+.aside__name {
+  font-size: calc(18 * 100vw / 555);
+  font-weight: 700;
+  line-height: calc(22 * 100vw / 555);
+  text-transform: uppercase;
+  text-align: center;
+  padding: calc(68 * 100vw / 555) calc(16 * 100vw / 555) calc(8 * 100vw / 555);
+}
+.aside__job {
+  text-align: center;
+  text-transform: uppercase;
+  padding: 0 calc(16 * 100vw / 555) calc(24 * 100vw / 555);
+}
+
+/* CONTACTS ======================================== */
+
+.contacts__container {
+  padding: 0 calc(16 * 100vw / 555) calc(32 * 100vw / 555);
+}
+
+.contacts__list {
+  padding-top: calc(17 * 100vw / 555);
+}
+
+.list__item {
+  padding-bottom: calc(13 * 100vw / 555);
+}
+
+.contacts__list .list__item:last-child {
+  padding-bottom: 0;
+}
+
+.list__item .item__link:hover {
+  color: #0074fd;
+  text-decoration: underline;
+}
+
+.item__link {
+  padding-left: calc(8 * 100vw / 555);
+}
+
+/* SKILLS ======================================== */
+
+.skills__container {
+  padding: 0 calc(16 * 100vw / 555) calc(32 * 100vw / 555);
+}
+
+.skills__list {
+  padding-top: calc(17 * 100vw / 555);
+}
+
+/* LANGUAGE ===================================== */
+
+.language__container {
+  padding: 0 calc(16 * 100vw / 555) calc(32 * 100vw / 555);
+}
+
+.language__list {
+  padding-top: calc(17 * 100vw / 555);
 }
