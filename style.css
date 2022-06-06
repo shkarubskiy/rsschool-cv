@@ -1,2 +1,338 @@
-* {
+/* ZEROING */
+
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul,
+ol,
+li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: inherit;
+  font-size: inherit;
+}
+
+html,
+body {
+  height: 100%;
+  line-height: calc(14 * 100vw / 555);
+  font-family: "Montserrat", sans-serif;
+  font-size: calc(10 * 100vw / 555);
+  color: #424242;
+}
+
+.wrapper {
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+}
+
+/* ELEMENTS ======================================== */
+
+.title {
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+}
+
+.title::after {
+  content: "";
+  width: calc(2 * 100vw / 555);
+  height: calc(2 * 100vw / 555);
+  margin-left: calc(10 * 100vw / 555);
+  border-radius: calc(1 * 100vw / 555);
+  background-color: #424242;
+}
+
+.title::before {
+  content: "";
+  width: calc(2 * 100vw / 555);
+  height: calc(2 * 100vw / 555);
+  margin-right: calc(10 * 100vw / 555);
+  border-radius: calc(1 * 100vw / 555);
+  background-color: #424242;
+}
+
+.title-aside {
+  font-weight: 700;
+  color: #ffffff;
+  background-color: #424242;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: calc(24 * 100vw / 555);
+}
+
+.subtitle {
+  font-weight: 700;
+  color: #7e7e7e;
+}
+
+.text {
+  font-weight: 400;
+}
+
+.meta {
+  font-weight: 400;
+  color: #7e7e7e;
+}
+
+.list__item {
+  font-weight: 400;
+}
+
+/* HEADER ================================================ */
+
+.header__container {
+  border-bottom: solid calc(1 * 100vw / 555) rgba(66, 66, 66, 0.2);
+  padding: calc(16 * 100vw / 555) 0;
+  margin: 0 calc(20 * 100vw / 555);
+}
+
+.nav__list {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  font-weight: 700;
+}
+
+.nav__item {
+  padding: calc(2 * 100vw / 555) calc(10 * 100vw / 555);
+  color: #7e7e7e;
+  transition: color 250ms linear;
+}
+
+.nav__item:hover {
+  color: #424242;
+}
+
+/* MAIN =============================================== */
+
+.main {
+  flex: 1 1 auto;
+}
+
+.main__container {
+  margin: 0 auto;
+  padding: calc(20 * 100vw / 555) calc(20 * 100vw / 555) 0;
+  max-width: 1440px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.main__aside {
+  width: 38%;
+  margin-top: calc(42 * 100vw / 555);
+  background-color: #d8ecff;
+  position: relative;
+}
+
+.main__content {
+  width: 58%;
+}
+
+/* ABOUT ============================================= */
+
+.about {
+  border-bottom: solid calc(1 * 100vw / 555) rgba(66, 66, 66, 0.2);
+  padding-bottom: calc(16 * 100vw / 555);
+  margin-bottom: calc(24 * 100vw / 555);
+}
+
+.about__title {
+  padding-bottom: calc(16 * 100vw / 555);
+}
+
+.about__text {
+  padding-bottom: calc(8 * 100vw / 555);
+}
+
+.about .about__text:last-child {
+  padding-bottom: calc(0 * 100vw / 555);
+}
+
+/* EDUCATION ======================================== */
+
+.education {
+  border-bottom: solid calc(1 * 100vw / 555) rgba(66, 66, 66, 0.2);
+  padding-bottom: calc(16 * 100vw / 555);
+  margin-bottom: calc(24 * 100vw / 555);
+}
+
+.education__card {
+  padding-bottom: calc(16 * 100vw / 555);
+}
+.education .education__card:last-child {
+  padding-bottom: 0;
+}
+
+.education__title {
+  padding-bottom: calc(16 * 100vw / 555);
+}
+
+.education__subtitle {
+  padding-bottom: calc(8 * 100vw / 555);
+}
+
+.education__text {
+  color: #424242;
+  padding-bottom: calc(4 * 100vw / 555);
+}
+
+/* .education .education__meta:last-child {
+  padding-bottom: calc(16 * 100vw / 555);
+} */
+
+/* EXPERIENCE ======================================= */
+
+.experience {
+  border-bottom: solid calc(1 * 100vw / 555) rgba(66, 66, 66, 0.2);
+  padding-bottom: calc(16 * 100vw / 555);
+  margin-bottom: calc(24 * 100vw / 555);
+}
+
+.experience__title {
+  padding-bottom: calc(16 * 100vw / 555);
+}
+
+.experience__text {
+  padding-bottom: calc(4 * 100vw / 555);
+}
+
+.experience__list .list__item {
+  list-style: inside;
+  list-style-position: outside;
+  margin-left: calc(20 * 100vw / 555);
+  padding-bottom: calc(4 * 100vw / 555);
+}
+.experience__link {
+  color: #0074fd;
+  text-decoration: underline;
+}
+
+.experience__list .list__item:last-child {
+  padding-bottom: 0;
+}
+
+/* CODE =========================================== */
+
+.code {
+  border-bottom: solid calc(1 * 100vw / 555) rgba(66, 66, 66, 0.2);
+  padding-bottom: calc(16 * 100vw / 555);
+  margin-bottom: calc(24 * 100vw / 555);
+}
+
+.code__title {
+  padding-bottom: calc(16 * 100vw / 555);
+}
+
+.code__text {
+  padding-bottom: calc(16 * 100vw / 555);
+}
+
+.code__block {
+  font-size: calc(10 * 100vw / 555);
+  padding-bottom: calc(16 * 100vw / 555);
+}
+
+/* ASIDE ============================================ */
+
+.aside__photo {
+  overflow: hidden;
+  width: calc(94 * 100vw / 555);
+  height: calc(94 * 100vw / 555);
+  border: solid calc(3 * 100vw / 555) #ffffff;
+  border-radius: calc(47 * 100vw / 555);
+  position: absolute;
+  z-index: 10;
+  left: calc(50% - 47 * 100vw / 555);
+  top: calc(-47 * 100vw / 555);
+}
+.photo__image {
+  width: 100%;
+}
+
+.aside__name {
+  font-size: calc(18 * 100vw / 555);
+  font-weight: 700;
+  line-height: calc(22 * 100vw / 555);
+  text-transform: uppercase;
+  text-align: center;
+  padding: calc(68 * 100vw / 555) calc(16 * 100vw / 555) calc(8 * 100vw / 555);
+}
+.aside__job {
+  text-align: center;
+  text-transform: uppercase;
+  padding: 0 calc(16 * 100vw / 555) calc(24 * 100vw / 555);
+}
+
+/* CONTACTS ======================================== */
+
+.contacts__container {
+  padding: 0 calc(16 * 100vw / 555) calc(32 * 100vw / 555);
+}
+
+.contacts__list {
+  padding-top: calc(17 * 100vw / 555);
+}
+
+.list__item {
+  padding-bottom: calc(13 * 100vw / 555);
+}
+
+.contacts__list .list__item:last-child {
+  padding-bottom: 0;
+}
+
+.list__item .item__link:hover {
+  color: #0074fd;
+  text-decoration: underline;
+}
+
+.item__link {
+  padding-left: calc(8 * 100vw / 555);
+}
+
+/* SKILLS ======================================== */
+
+.skills__container {
+  padding: 0 calc(16 * 100vw / 555) calc(32 * 100vw / 555);
+}
+
+.skills__list {
+  padding-top: calc(17 * 100vw / 555);
+}
+
+/* LANGUAGE ===================================== */
+
+.language__container {
+  padding: 0 calc(16 * 100vw / 555) calc(32 * 100vw / 555);
+}
+
+.language__list {
+  padding-top: calc(17 * 100vw / 555);
 }
