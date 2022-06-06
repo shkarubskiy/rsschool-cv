@@ -186,6 +186,7 @@ body {
 .education__card {
   padding-bottom: calc(16 * 100vw / 555);
 }
+
 .education .education__card:last-child {
   padding-bottom: 0;
 }
@@ -202,10 +203,6 @@ body {
   color: #424242;
   padding-bottom: calc(4 * 100vw / 555);
 }
-
-/* .education .education__meta:last-child {
-  padding-bottom: calc(16 * 100vw / 555);
-} */
 
 /* EXPERIENCE ======================================= */
 
@@ -335,4 +332,27 @@ body {
 
 .language__list {
   padding-top: calc(17 * 100vw / 555);
+}
+
+/* FOOTER ========================================*/
+
+.footer__container {
+  margin: 0 calc(20 * 100vw / 555) calc(20 * 100vw / 555);
+  padding: calc(16 * 100vw / 555);
+  background-color: #d8ecff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer__link {
+}
+
+.footer__logo {
+  height: calc(16 * 100vw / 555);
+  cursor: pointer;
+}
+
+.footer__link {
+  font-weight: 700;
 }
