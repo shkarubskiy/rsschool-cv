@@ -137,9 +137,7 @@ body {
 }
 
 .main__container {
-  margin: 0 auto;
   padding: calc(20 * 100vw / 555) calc(20 * 100vw / 555) 0;
-  max-width: 1440px;
   display: flex;
   justify-content: space-between;
 }
@@ -301,6 +299,10 @@ body {
   padding-bottom: calc(13 * 100vw / 555);
 }
 
+.item__icon {
+  width: calc(16 * 100vw / 555);
+}
+
 .contacts__list .list__item:last-child {
   padding-bottom: 0;
 }
@@ -345,12 +347,9 @@ body {
   align-items: center;
 }
 
-.footer__link {
-}
-
 .footer__logo {
   height: calc(16 * 100vw / 555);
-  cursor: pointer;
+  cursor: poi;
 }
 
 .footer__link {
