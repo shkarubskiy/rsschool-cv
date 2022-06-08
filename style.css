@@ -349,7 +349,7 @@ body {
 
 .footer__logo {
   height: calc(16 * 100vw / 555);
-  cursor: poi;
+  cursor: pointer;
 }
 
 .footer__link {
