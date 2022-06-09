@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.9/styles/default.min.css"
+    />
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.9/highlight.min.js"></script>
+    <script>
+      hljs.initHighlightingOnLoad();
+    </script>
+    <title>CV</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="header">
+        <div class="header__container">
+          <nav class="header__nav nav">
+            <ul class="nav__list">
+              <li class="nav__item"><a href="#about">About</a></li>
+              <li class="nav__item"><a href="#skills">Skills</a></li>
+              <li class="nav__item"><a href="#code">Code</a></li>
+              <li class="nav__item"><a href="#experience">Experience</a></li>
+              <li class="nav__item"><a href="#education">Education</a></li>
+              <li class="nav__item"><a href="#language">Language</a></li>
+              <li class="nav__item"><a href="#contacts">Contacts</a></li>
+            </ul>
+          </nav>
+        </div>
+      </header>
+      <main class="main">
+        <div class="main__container">
+          <aside class="main__aside">
+            <div class="aside__photo photo">
+              <img
+                class="photo__image"
+                src="assets/img/photo.jpg"
+                alt="My Photo"
+              />
+            </div>
+            <h1 class="aside__name">Vyacheslav<br />Shkarubskiy</h1>
+            <h3 class="aside__job">Front-end developer</h3>
+            <section class="contacts" id="contacts">
+              <div class="contacts__container">
+                <!-- <a name="contacts"></a> -->
+                <h2 class="contacts__title title-aside">Contacts</h2>
+                <ul class="contacts__list list">
+                  <li class="list__item item">
+                    <img
+                      src="assets/svg/phone.svg"
+                      alt="phone"
+                      class="item__icon"
+                    />
+                    <a href="tel:+7-701-622-63-73" class="item__link"
+                      >+7-701-622-63-73</a
+                    >
+                  </li>
+                  <li class="list__item item">
+                    <img
+                      src="assets/svg/mail.svg"
+                      alt="mail"
+                      class="item__icon"
+                    />
+                    <a href="mailto:mail@vshka.ru" class="item__link"
+                      >mail@vshka.ru</a
+                    >
+                  </li>
+                  <li class="list__item item">
+                    <img
+                      src="assets/svg/telegram.svg"
+                      alt="phone"
+                      class="item__icon"
+                    />
+                    <a href="telegram.me/@vshkarubskiy" class="item__link"
+                      >@vshkarubskiy</a
+                    >
+                  </li>
+                  <li class="list__item item">
+                    <img
+                      src="assets/svg/website.svg"
+                      alt="phone"
+                      class="item__icon"
+                    />
+                    <a href="https://vshka.ru" class="item__link">vshka.ru</a>
+                  </li>
+                </ul>
+              </div>
+            </section>
+            <section class="skills" id="skills">
+              <div class="skills__container">
+                <!-- <a name="skills"></a> -->
+                <h2 class="skills__title title-aside">Skills</h2>
+                <ul class="skills__list list">
+                  <li class="list__item">JavaScript Basics</li>
+                  <li class="list__item">HTML5, CSS3</li>
+                  <li class="list__item">Git</li>
+                  <li class="list__item">Node.js</li>
+                  <li class="list__item">VS Code, Atom IDE</li>
+                  <li class="list__item">Linux</li>
+                  <li class="list__item">Figma</li>
+                </ul>
+              </div>
+            </section>
+            <section class="Language" id="language">
+              <div class="language__container">
+                <!-- <a name="language"></a> -->
+                <h2 class="language__title title-aside">Language</h2>
+                <ul class="language__list list">
+                  <li class="list__item">Russian - Native</li>
+                  <li class="list__item">
+                    English - A1 (main practice - technical documentation and
+                    video games)
+                  </li>
+                </ul>
+                <p class="language__text text">
+                  This CV was translated using Google Translate. God Bless
+                  Google Translate!
+                </p>
+              </div>
+            </section>
+          </aside>
+          <div class="main__content">
+            <section class="about" id="about">
+              <!-- <a name="about"></a> -->
+              <h2 class="about__title title">About me</h2>
+              <p class="about__text text">
+                I am an engineer who loves engineering, technology and
+                programming. And LEGO.
+              </p>
+              <p class="about__text text">
+                For the last 8 years I have been working as an engineer of
+                automated control systems, namely "Smart Home" systems. It was a
+                very interesting experience, but over time I realized that the
+                results of my work are available only to those for whom this
+                work is being done - a client who wants a "Smart Home".
+              </p>
+              <p class="about__text text">
+                This prompted me to change my activity to frontend development -
+                a direction whose results are potentially available to the whole
+                world.
+              </p>
+            </section>
+            <section class="education" id="education">
+              <!-- <a name="education"></a> -->
+              <h2 class="education__title title">Education</h2>
+              <div class="education__card card">
+                <h3 class="education__subtitle subtitle">
+                  University Education
+                </h3>
+                <p class="education__text text">
+                  Saken Seifullin Kazakh Agrotechnical University
+                </p>
+                <p class="education__text text">
+                  Faculty - Computer Systems and Vocational Education
+                </p>
+                <p class="education__text text">
+                  Speciality - Information Systems
+                </p>
+                <p class="education__meta meta">2010 - Nur-Sultan</p>
+              </div>
+              <div class="education__card card">
+                <h3 class="education__subtitle subtitle">Courses</h3>
+                <p class="education__text text">
+                  RSSchool - JS/FE Pre-School 2022Q2
+                </p>
+                <p class="education__meta meta">2022 - Nur-Sultan</p>
+              </div>
+            </section>
+            <section class="experience" id="experience">
+              <!-- <a name="experience"></a> -->
+              <h2 class="experience__title title">Experience</h2>
+              <p class="experience__text text">
+                I got my initial experience in front-end development while
+                studying at university.
+              </p>
+              <p class="experience__text text">
+                Later, when working with Smart Home systems, I used HTML and
+                JavaScript to create additional working tools, such as equipment
+                calculators.
+              </p>
+              <p class="experience__text text">
+                In my free time, I do my own small projects related to online
+                components for board games.
+              </p>
+              <ul class="experience__list list">
+                <li class="list__item">
+                  <a
+                    class="experience__link link"
+                    href="https://webtivity.vshka.ru"
+                    >Webtivity</a
+                  >
+                  - online game of charades.
+                  <a
+                    class="experience__link link"
+                    href="https://github.com/shkarubskiy/webtivity"
+                    >GitHub</a
+                  >
+                </li>
+                <li class="list__item">
+                  <a class="experience__link link" href="https://teams.vshka.ru"
+                    >Teams</a
+                  >
+                  - team split tool.
+                  <a
+                    class="experience__link link"
+                    href="https://github.com/shkarubskiy/TeamMaker"
+                    >GitHub</a
+                  >
+                </li>
+                <li class="list__item">
+                  <a
+                    class="experience__link link"
+                    href="https://vshka.ru/portfolio.html"
+                  >
+                    HTML-CSS portfolio</a
+                  >
+                  - examples of layout work.
+                </li>
+              </ul>
+            </section>
+            <section class="code" id="code">
+              <!-- <a name="code"></a> -->
+              <h2 class="code__title title">Code example</h2>
+              <p class="code__text text">
+                Codewars kata: Complete the solution so that the function will
+                break up camel casing, using a space between words.
+              </p>
+              <div class="code__block">
+                <pre><code>
+    function solution(string) {
+        let result = "";
+        for (letter of string) {
+            letter != letter.toUpperCase() 
+            ? (result += letter) 
+            : (result = result + " " + letter);
+        }
+        return result;
+    }
+                </code></pre>
+              </div>
+            </section>
+          </div>
+        </div>
+      </main>
+      <footer class="footer">
+        <div class="footer__container">
+          <a href="https://github.com/shkarubskiy/" class="footer__link"
+            >&#169; 2022 shkarubskiy</a
+          >
+          <a href="https://rs.school/js/" class="footer__link"
+            ><img src="assets/svg/logo.svg" alt="" class="footer__logo"
+          /></a>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>
