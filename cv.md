@@ -50,3 +50,28 @@ function solution(string) {
 }
 ```
 
+---
+
+### Experience
+
+My experience in front-end development is not very big. I am currently working on my first commercial project - a mobile access control system application. <br>
+
+My pet-projects can be viewed on my web page [vshka.ru](https://vshka.ru) and [GitHub](https://github.com/shkarubskiy).
+
+---
+
+### Education
+
+KazATU, Kazakhstan, Nur-Sultan - 2010<br>
+Faculty of Computer Systems and Vocational Education<br>
+Information Systems<br>
+
+---
+
+### Language
+
+- Russian - Native
+- English - A1 (main practice - technical documentation and video games)
+
+This CV was translated using Google Translate. God Bless Google Translate!
+
