@@ -31,3 +31,22 @@ This prompted me to change my activity to frontend development - a direction who
 - Node.js
 - Linux
 - Figma
+
+---
+
+### Code example from CODEWARS
+
+Complete the solution so that the function will break up camel casing, using a space between words.
+
+```javascript
+function solution(string) {
+  let result = "";
+  for (letter of string) {
+    letter != letter.toUpperCase()
+      ? (result += letter)
+      : (result = result + " " + letter);
+  }
+  return result;
+}
+```
+
